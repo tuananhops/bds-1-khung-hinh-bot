@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# vtk <tool> [args]   e.g.  vtk analyze ref.mp4 -o brief.json | vtk qc final.mp4 --platform all
+# VTK_HOME = thư mục này; VTK_PY = python của venv (mặc định $VTK_HOME/venv/bin/python, rồi python3)
+D=${VTK_HOME:-$(cd "$(dirname "$(readlink -f "$0")")" && pwd)}
+P=${VTK_PY:-$D/venv/bin/python}; [ -x "$P" ] || P=python3
+declare -A T=([analyze]=analyze_reference [beatcut]=beat_cut [beat]=beat_cut [transitions]=transitions [trans]=transitions
+  [grade]=color_grade [color]=color_grade [ramp]=speed_ramp [speed]=speed_ramp [subs]=subtitles [subtitles]=subtitles
+  [text]=text_overlay [overlay]=text_overlay [audio]=audio [render]=render [reframe]=reframe [key]=chroma_key [chroma]=chroma_key [stab]=stabilize [clean]=audio_clean [denoise]=audio_clean
+  [silencecut]=silence_cut [scopes]=scopes [mapfx]=map_fx [leak]=light_leak [logo]=logo_reveal [broll]=broll_insert [qc]=qc)
+if [ -z "$1" ] || [ -z "${T[$1]}" ]; then echo "usage: vtk <tool> [args]   tools: ${!T[*]}   (vtk <tool> -h for help)"; exit 1; fi
+t=${T[$1]}; shift; exec "$P" "$D/scripts/$t.py" "$@"

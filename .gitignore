@@ -1,0 +1,22 @@
+# video / audio / ảnh nặng
+*.mp4
+*.mov
+*.MOV
+*.mkv
+*.avi
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.jpg
+*.jpeg
+*.png
+# môi trường
+venv/
+.venv/
+__pycache__/
+*.pyc
+.cache/
+work/
+out/

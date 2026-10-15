@@ -1,0 +1,104 @@
+{
+ "_note": "Cấu hình chữ vàng kim đã duyệt (bản 4). Sửa dur/cta_time/fix/keywords cho video mới. Tên người dẫn đã thay bằng [TÊN].",
+ "dur": 127.06,
+ "cta_time": 124.0,
+ "cta_text": "Alo [TÊN] xem nhà ->",
+ "start_after": 0,
+ "fix": {
+  "trào": "chào",
+  "nang": "Nam",
+  "ẩ": "ở",
+  "nhảy": "này",
+  "giáo": "ráo",
+  "lừng": "nâng",
+  "bắn": "băn",
+  "đòi": "khoăn",
+  "da": "gia",
+  "chỏ": "chở",
+  "lợi": "nơi",
+  "thật": "",
+  "9": "kín",
+  "ngổ": "ngủ",
+  "73m2": "73m²",
+  "73m": "73m²",
+  "lươi": "nơi",
+  "lan": "Nam",
+  "điều": "nhiều",
+  "tổ": "tủ",
+  "trỏ": "chở",
+  "thủ": "chủ"
+ },
+ "merge": [
+  {
+   "match": [
+    "4",
+    ",2",
+    "tỷ"
+   ],
+   "extra": 1,
+   "text": "4,28 tỷ"
+  },
+  {
+   "match": [
+    "3",
+    ",9",
+    "tỷ"
+   ],
+   "extra": 1,
+   "text": "3,98 tỷ"
+  },
+  {
+   "match": [
+    "3",
+    "tỷ",
+    "9",
+    "tám"
+   ],
+   "extra": 1,
+   "text": "3,98 tỷ"
+  },
+  {
+   "match": [
+    "đồ",
+    "tư"
+   ],
+   "text": "đầu tư"
+  }
+ ],
+ "keywords": [
+  "giảm giá",
+  "73m²",
+  "ô tô đỗ cửa",
+  "ngõ 3m",
+  "hơn 73m²",
+  "4,28 tỷ",
+  "3,98 tỷ",
+  "300 triệu",
+  "dã man",
+  "hàng hiếm",
+  "kinh doanh",
+  "4 phòng ngủ",
+  "rộng rãi",
+  "ngang 4m",
+  "khép kín",
+  "sân trước sân sau",
+  "khe thoáng",
+  "hướng Đông Nam",
+  "500 triệu",
+  "4 cái xe",
+  "ô tô tải",
+  "yên tâm"
+ ],
+ "emo": [
+  "dã man",
+  "hàng hiếm",
+  "rộng rãi",
+  "yên tâm",
+  "khép kín",
+  "giảm giá"
+ ],
+ "strike": [
+  "4,28"
+ ],
+ "kw_font": "Bungee"
+}
